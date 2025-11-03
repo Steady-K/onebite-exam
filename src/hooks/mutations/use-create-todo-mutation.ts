@@ -1,5 +1,6 @@
 import { CreateTodo } from "@/api/create-todo";
 import { Query_Keys } from "@/lib/constants";
+import type { Todo } from "@/types";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 export function useCreateTodoMutation() {
@@ -9,9 +10,10 @@ export function useCreateTodoMutation() {
     mutationFn: CreateTodo,
     onMutate: () => {},
     onSettled: () => {},
-    onSuccess: () => {
-      queryClient.invalidateQueries({
-        queryKey: Query_Keys.todo.list,
+    onSuccess: (newTodo) => {
+      queryClient.setQueryData<Todo[]>(Query_Keys.todo.list, (prevTodos) => {
+        if (!prevTodos) return [newTodo];
+        return [...prevTodos, newTodo];
       });
     },
     onError: (error) => {

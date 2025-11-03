@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 export function useTodoDataById(id: string) {
   return useQuery({
     queryFn: () => fetchTodoById(id),
-    queryKey: Query_Keys.todo.detail(id)
+    queryKey: Query_Keys.todo.detail(id),
 
     staleTime: 5000,
     gcTime: 5000,

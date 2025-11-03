@@ -6,58 +6,8 @@
       "isDone": true
     },
     {
-      "id": "2",
-      "content": "Todo 2",
-      "isDone": true
-    },
-    {
-      "id": "3",
-      "content": "Todo 3",
-      "isDone": false
-    },
-    {
-      "id": "614d",
+      "id": "2ee4",
       "content": "123",
-      "isDone": false
-    },
-    {
-      "id": "0765",
-      "content": "31314",
-      "isDone": false
-    },
-    {
-      "id": "732f",
-      "content": "123",
-      "isDone": false
-    },
-    {
-      "id": "46e8",
-      "content": "123",
-      "isDone": false
-    },
-    {
-      "id": "ae00",
-      "content": "123",
-      "isDone": false
-    },
-    {
-      "id": "e676",
-      "content": "345",
-      "isDone": false
-    },
-    {
-      "id": "94b0",
-      "content": "345",
-      "isDone": false
-    },
-    {
-      "id": "c974",
-      "content": "123",
-      "isDone": false
-    },
-    {
-      "id": "1a80",
-      "content": "공부하기",
       "isDone": false
     }
   ]

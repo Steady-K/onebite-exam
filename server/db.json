@@ -1,13 +1,8 @@
 {
   "todos": [
     {
-      "id": "1",
+      "id": "3601",
       "content": "Todo 1",
-      "isDone": false
-    },
-    {
-      "id": "2ee4",
-      "content": "123",
       "isDone": false
     }
   ]
